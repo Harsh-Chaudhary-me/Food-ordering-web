@@ -10,6 +10,8 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    /*adding this to check*/
+    overflow-x: hidden;
 }
 .row{
     max-width: 1140px;
@@ -141,6 +143,8 @@ h3{
 .box p{
     font-size: 90%;
     line-height:145% ;
+    /*value*/
+    /* margin-bottom: 10px; */
 }
 .icon-big{
    font-size: 350%;
@@ -148,11 +152,13 @@ h3{
    color: #e67e22;
    margin-bottom: 10px;
 }
-.section-meals{ margin: 0;
+.section-meals{ 
+    margin: 0;
     padding: 20% 0;}
 .meals-showcase{
     list-style: none;
     width: 100%;
+    overflow-x: hidden;
 }
 .meals-showcase li{
     display: block;
@@ -162,13 +168,121 @@ h3{
 .meal-photo{
     width: 100%;
     margin: 0;
+    overflow: hidden;
+    background-color: #000;
+   transition: transform 0.5s, opacity 0.5s;
 }
 .meal-photo img{
     width: 100%;
     height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
 }
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+/* .clearfix{zoom: 1;}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+} */
+
 /* extra me likhna pada h */
 /* .food-photo{
    
 } */
+ .section-meals{
+    padding: 0;
+ }
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
 
+/*style for btns and rules*/
+.works-steps{
+    margin-bottom: 50px;
+    margin-right: 25px;
+}
+.steps-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.steps-box:last-child{
+    padding-left: 3% ;
+    margin-top: 70px;
+}
+.app-screen{
+    width: 40%;
+    box-shadow: 10px 10px 5px #aaaaaa;/*remove this if change image*/
+}
+.works-steps div{
+    color: #e67e22;
+    border: 4px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 25px;
+    float: left;
+    font-size: 150%;
+}
+.works-steps:last-of-type{
+    margin-bottom: 80px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    background: transparent;
+}
+.btn-app:link,
+.btn-app:visited{
+ border: 0;
+}
+.section-steps{
+    background-color: #f4f4f4;
+}
+/*extra to be written as the bg is applied to half only If child elements like .col or .steps-box use float, parent .section-steps might collapse height and background only covers some area.*/
+.section-steps::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.box img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+}
+.city-feature{
+    margin-bottom: 5px;
+}
+.icon-small{
+    color: #e67e22;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+a:link,a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+}
+a:hover,
+a:active{
+  color: #555;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s,color 0.5s;
+}
