@@ -223,6 +223,9 @@ h3{
 }
 .app-screen{
     width: 40%;
+    background: transparent;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     box-shadow: 10px 10px 5px #aaaaaa;/*remove this if change image*/
 }
 .works-steps div{
