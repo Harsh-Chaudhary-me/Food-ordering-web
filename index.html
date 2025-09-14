@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My food Project</title>
     <link rel="stylesheet" href="vendors/css/normalize.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--stulesheet responsive grid  system-->
     <link rel="stylesheet" href="vendors/css/html5reset.css" media="all">
 	<link rel="stylesheet" href="vendors/css/col.css" media="all">
@@ -24,6 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
 </head>
 <body>
     <header>
@@ -31,21 +33,21 @@
             <div class="row">
                 <img class="logo" src="resources/img/logo1.png" alt="">
                   <ul class="main-nav">
-                <li><a href="#">Food Delivery</a></li>
-                <li><a href="#works-features">How it Works</a></li>
-                <li><a href="#our-cities-value">Our cities</a></li>
-                <li><a href="#sign-up-here">Sign-Up </a></li>
+                <li><a href="#works-features">Food Delivery</a></li>
+                <li><a href="#hiw">How it Works</a></li>
+                <li><a href="#city">Our cities</a></li>
+                <li><a href="#sign-up">Sign-Up </a></li>
             </ul>
             </div>
            
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food <br>Hello super healthy food!!</h1>
-            <a class="btn btn-full" href="#">I am hungry</a>
-            <a  class="btn btn-ghost" href="#">show me more</a>
+            <a class="btn btn-full" href="#plans">I am hungry</a>
+            <a  class="btn btn-ghost" href="#works-features">show me more</a>
         </div>
     </header>
-    <section class="section-features" id="works-features">
+    <section class="section-features" id="works-features" >
         <div class="row">
             <h2>Get food fast &mdash; Not fast food!!</h2>
             <p class="long-copy">Hello, we're Chaudhary's , your new premium food delivery service. We know you're
@@ -89,7 +91,7 @@
     </div> -->
 
    
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
         
         <ul class="meals-showcase clearfix">
             <li>
@@ -136,13 +138,13 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>How it works &mdash; Simple as 1,2,3 </h2>
         </div>
         <div class="row">
             <div class="col span_1_of_2 steps-box">
-                <img src="resources/img/phone.png" alt="phone-image" class="app-screen" >
+                <img  data-aos="slide-left" data-aos-duration="1000" src="resources/img/phone.png" alt="phone-image" class="app-screen" >
             </div>
             <div class="col span_1_of_2 steps-box">
                 <div class="works-steps">
@@ -163,7 +165,7 @@
 
         </div>
     </section>
-    <section class="section-cities" id="our-cities-value">
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're Currently in these cities.</h2>
         </div>
@@ -197,7 +199,7 @@
               </div>
             </div>
              <div class="col span_1_of_4 box">
-              <img src="resources/img/mumbai.jpg" alt="delhi">
+              <img src="resources/img/mumbai.png" alt="delhi">
               <h3>Mumbai</h3>
               <div class="city-feature">
                 <ion-icon class="icon-small" name="person-circle-outline"></ion-icon>2000+ Happy Eaters
@@ -211,8 +213,8 @@
               </div>
             </div>
              <div class="col span_1_of_4 box">
-              <img src="resources/img/ghaziabad.jpg" alt="delhi">
-              <h3>Ghaziabad</h3>
+              <img src="resources/img/jaipur.jpg" alt="delhi">
+              <h3>Jaipur</h3>
               <div class="city-feature">
                 <ion-icon class="icon-small" name="person-circle-outline"></ion-icon>1800+ Happy Eaters
               </div>
@@ -221,12 +223,12 @@
               </div>
               <div class="city-feature">
                 <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
-                <a href="#">@Chaudhary's Gzb</a>
+                <a href="#">@Chaudhary's Jaipur</a>
               </div>
             </div>
         </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Our customer can't live without us.</h2>
         </div>
@@ -251,22 +253,22 @@
             </div>
         </div>
     </section>
-    <section class="section-plans" id="sign-up-here" >
+    <section class="section-plans" id="plans"  data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Start eating healthy today..</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_3">
                 <div class="plan-box">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="2000">
                         <h3>Premium</h3>
-                        <p class="plan-price">399 <span>/month</span></p>
-                        <p class="plan-price-meaal">That's only 13.905 per meal. </p>
+                        <p class="plan-price">₹399 <span>/month</span></p>
+                        <p class="plan-price-meaal">That's only ₹13.905 per meal. </p>
                     </div>
                     <div>
                         <ul>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal everyday</li>
-                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7i>
+                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7</li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest  creation</li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free Delivery</li>
                         </ul>
@@ -280,13 +282,13 @@
                 <div class="plan-box">
                     <div>
                         <h3>Pro</h3>
-                        <p class="plan-price">199 <span>/month</span></p>
-                        <p class="plan-price-meaal">That's only 10.905 per meal. </p>
+                        <p class="plan-price">₹199 <span>/month</span></p>
+                        <p class="plan-price-meaal">That's only &#8377;10.905 per meal. </p>
                     </div>
                     <div>
                         <ul>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal in 10</li>
-                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7i>
+                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7</li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest  creation</li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free Delivery</li>
                         </ul>
@@ -300,13 +302,13 @@
                 <div class="plan-box">
                     <div>
                         <h3>Starter</h3>
-                        <p class="plan-price">19 <span>/meal</span></p>
+                        <p class="plan-price">&#8377;19 <span>/meal</span></p>
                         <p class="plan-price-meaal">&nbsp; </p>
                     </div>
                     <div>
                         <ul>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal month</li>
-                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7i>
+                            <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24*7</li>
                             <li><ion-icon class="icon-small" name="close-circle-outline"></ion-icon></li>
                             <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free Delivery</li>
                         </ul>
@@ -319,7 +321,7 @@
         </div>
     </section>
     <!--COntact form-->
-    <section class="section-form">
+    <section class="section-form" id="sign-up" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -347,6 +349,7 @@
                     </div>
                     <div class="col span_2_of_3">
                         <select name="find-us" id="find-us">
+                             <option value="" disabled selected>Select one </option>
                             <option value="friends">Friends</option>
                             <option value="search">Search Engine</option>
                             <option value="ad">Advertisement</option>
@@ -408,5 +411,37 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  
 </body>
 </html>
